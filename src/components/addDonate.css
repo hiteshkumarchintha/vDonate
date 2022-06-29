@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  
+  .formwrapper{
+    max-width: 500px;
+   height: 650px;
+   position: relative;
+   right: 10px;
+   justify-content: space-between;
+    background: #fff;
+    margin: 60px auto;
+    border-radius: 1.3rem;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+    padding: 30px;
+  }
+  
+  .formwrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+    text-align: center;
+  }
+  
+   .formwrapper .form{
+    
+  position: relative;
+  
+  justify-content: space-evenly;
+  }
+  
+  .formwrapper .form .inputfield{
+    margin-bottom: 15px;
+  
+    align-items: center;
+    border-radius: 2.3rem;
+  }
+  
+  .formwrapper .form .inputfield label{
+     width: 200px;
+     color: black;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .formwrapper .form .inputfield .input,
+  .formwrapper .form .inputfield .textarea{
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d7e6f5;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: .5rem;
+  justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .formwrapper .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+    resize: none;
+  }
+  
+  .formwrapper .form .inputfield .custom_select{
+    position: relative;
+    border-radius: 1.5rem;
+   
+    width: 100%;
+    height: 37px;
+  }
+  
+  .formwrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .formwrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d7e6f5;
+    border-radius: 3px;
+  }
+  
+  
+  .formwrapper .form .inputfield .input:focus,
+  .formwrapper .form .inputfield .textarea:focus,
+  .formwrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+  .formwrapper .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  
+  
+  .formwrapper .form .inputfield .Donate-btn{
+    
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 43px;
+      background-color: #151111;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 0.8rem;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      transition: 0.3s;
+    }
+    .formwrapper .form .inputfield .Donate-btn:hover {
+    background-color: #8371fd;
+    }
+  
+  .formwrapper .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .formwrapper .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .formwrapper .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .formwrapper .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }

@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+
+}
+.adminloginbody{
+    font-family: "poppins",sans-serif;
+   
+}
+.adminloginmain{
+    width: 100%;
+    min-height: 100vh;
+    background-color:  #a9dcda; 
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginbox{
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    height: 640px;
+    background-color: #fff;
+    border-radius: 3.3rem;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+
+}
+.inner-box{
+    position: absolute;
+    width: calc(100% - 4.1rem);
+    height: calc(100% - 4.1rem);
+    top: 50%;
+    left: 50%;
+     transform: translate(-50% , -50%);
+}
+.forms-warp{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  transition: .8s ease-in-out;
+
+}
+.actual-form{
+    position: relative;
+    top: -20px;
+}
+
+.log-in-form{
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transition: opacity 0.02s 0.4s;
+
+}
+
+
+.logov{
+    display: flex;
+    position: relative;
+    right: 20px;
+    align-items: center;
+   
+    height: auto;
+}
+.logov .logovimg{
+    width: 110%;
+    margin: 0.3rem;
+ 
+    align-items: center;
+}
+.loginheading{
+    position: relative;
+    top: -30px;
+    
+}
+.loginheading h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #151111;
+}
+.loginheading h6{
+    color: #bababa;
+    font-weight: 400;
+    font-size: 0.75rem;
+    
+    display: inline;
+}
+.heading-sign-in{
+  position: relative;
+    top: -10px;
+    align-items: center;
+}
+.heading-sign-in h2{
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #151111;
+ 
+}
+.heading-sign-in h6{
+  color: #bababa;
+  font-weight: 400;
+  font-size: 0.75rem;
+  
+  display: inline;
+}
+.toogle{
+    color:#151111;
+    font-size: 0.75rem;
+    text-decoration:none;
+    transition: 0.3s;
+    font-size: 400;
+
+}
+
+.toogle:hover{
+    color: #8371fd;
+
+}
+.input-wrap{
+   position: relative;
+   height: 37px;
+   margin-bottom: 2rem;
+   
+
+
+   
+}
+.input-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+    padding: 0;
+    font-size: 0.95rem;
+    color: #151111;
+    transition: 0.4s;
+  }
+  
+ 
+
+ 
+ 
+.sign-btn {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    background-color: #151111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+  }
+  .sign-btn:hover {
+  background-color: #8371fd;
+  }
+
+  
+  
+
+  .slide{
+    position: absolute;
+    height: 98%;
+    width: 55%;
+    left: 45%;
+    top: 0;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+  }
+  
+  .images-wrapper {
+    display: grid;
+    object-fit: fill;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .gif{
+    width: 80%;
+    position: relative; left: 10%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+  }
+  
+
+  
+    
+  .gif.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  
+  .text-wrap {
+    max-height: 2.2rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+  }
+  
+  .textgroup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.5s;
+  }
+  
+  .textgroup h2 {
+    line-height: 2.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    position: relative;
+    
+  }
+  
+/*  
+  @media (max-width: 320px) {
+    .loginbox {
+      height: auto;
+      max-width: 2%;
+      overflow: hidden;
+    }
+  
+    .inner-box {
+      position: static;
+      transform: none;
+      width: revert;
+      height: revert;
+      padding: 2rem;
+    }
+  
+    .forms-wrap {
+      position: revert;
+      width: 100%;
+      height: auto;
+    }
+  
+    .log-in-form {
+      max-width: revert;
+      padding: 1.5rem 2.5rem 2rem;
+      transition: transform 0.8s ease-in-out, opacity 0.45s linear;
+    }
+  
+    .loginheading {
+      margin: 2rem 0;
+    }
+
+    .log-in-form {
+      transform: translateX(100%);
+    }   
+  
+    .slide{
+      position: revert;
+      height: auto;
+      width: 100%;
+      padding: 3rem 2rem;
+      display: flex;
+    }
+  
+    .images-wrapper {
+      display: none;
+    }
+  
+    .text-slider {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .adminloginmain {
+      padding: 1rem;
+    }
+  
+    .loginbox {
+      border-radius: 2rem;
+    }
+  
+    .inner-box {
+      padding: 1rem;
+    }
+  
+    .slide {
+      padding: 1.5rem 1rem;
+      border-radius: 1.6rem;
+    }
+  
+    .text-wrap {
+      margin-bottom: 1rem;
+    }
+  
+    .text-group h2 {
+      font-size: 1.2rem;
+    }
+  
+    .log-in-form {
+      padding: 1rem 2rem 1.5rem;
+    }
+  } */
+
+
+  @media (max-width: 850px) {
+    .loginbox {
+      height: auto;
+      max-width: 550px;
+      overflow: hidden;
+    }
+    .inner-box{
+      position: static;
+      transform: none;
+      width: revert;
+      height: revert;
+      padding: 2rem;
+    }
+    .forms-warp{
+      position: revert;
+      width: 100%;
+      height: auto;
+    }
+    .loginheading {
+      margin: 2rem 0;
+      font-size: .2rem;
+    }
+  
+    .log-in-form{
+      max-width: 100%;
+      padding: -0.5rem 2.5rem 2rem;
+    }
+    .slide {
+      position: revert;
+      height: auto;
+      width: 100%;
+     
+    }
+   
+   .textgroup{
+     display: none;
+   }
+    
+  }

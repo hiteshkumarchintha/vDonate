@@ -1,0 +1,54 @@
+/* eslint-disable no-unused-vars */
+const express = require("express");
+const router = express.Router();
+const fetchuser = require("../middleware/fetchuser");
+const Donation = require("../models/Donation");
+const { body, validationResult } = require("express-validator");
+
+// ROUTE 1: Get All the Donations using: GET "/api/donations/fetchalldonations". Login required
+router.get("/fetchalldonations", fetchuser, async (req, res) => {
+  try {
+    const donations = await Donation.find({ user: req.user.id });
+    res.json(donations);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+// ROUTE 2: Add a new Donation using: POST "/api/donations/adddonation". Login required
+router.post("/adddonation", fetchuser, async (req, res) => {
+  try {
+    const {
+      category,
+      nameOfTheFood,
+      noOfPeople,
+      timeOfCookedFood,
+      address,
+      note,
+    } = req.body;
+
+    // If there are errors, return Bad request and the errors
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    const donation = new Donation({
+      category,
+      nameOfTheFood,
+      noOfPeople,
+      timeOfCookedFood,
+      address,
+      note,
+      user: req.user.id,
+    });
+    const savedDonation = await donation.save();
+
+    res.json(savedDonation);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+module.exports = router;

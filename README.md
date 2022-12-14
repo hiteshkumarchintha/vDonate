@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# VDonate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+What’s the issue? 
+The amount of food that goes straight into trash cans is as alarming as 50 kg of food per person every year just in India according to the Food Waste Index Report 2021, which would account to a colossal count if considered on a global level. This is merely an indication that an average individual who can afford tries to consume a lot more than required and ends up wasting most of these resources, creating a scope of unavailability to those who are in dire need of them. 
 
-## Available Scripts
+What do we intend to do?
+This app is a one stop solution which aims to bring a drop in the food wastage crisis in an attempt to reach out to as many people as possible. We intend to connect food donors and the people who are in dire need of it in and around those localities, which indeed would not be possible without our app and delivery agents bridging the gap.
 
-In the project directory, you can run:
+What does our app do?
+In order to resolve this issue we’ve developed a web application using Figma, HTML, CSS, JavaScript and MongoDB that could also serve as an add-on to existing food delivery giants like Swiggy and Zomato.
+This app’s primary functions include:
+User filling the pick up cart details with an estimate on how many people would the leftover serve.
+Scheduling for a nearby delivery agent to pick up the cart.
+Once the cart is picked up by the delivery agent it would be dropped off at the nearest group of needy who match the count mentioned by the user.
+Once the cart is dropped off, the user is informed regarding the same and their request is then closed.
+When in association with existing food delivery giants like Swiggy and Zomato this would also include a feature that would let the user schedule a leftover pick up while ordering in food.
 
-### `npm start`
+A glimpse of our project :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![1](https://user-images.githubusercontent.com/81342077/207596084-0c4cc63a-4f80-47f8-a6d0-1dbfec8f6ac6.png)
+![2](https://user-images.githubusercontent.com/81342077/207596102-70d9743a-e9d5-4ed9-9910-1514f94c8a83.png)
+![3](https://user-images.githubusercontent.com/81342077/207596113-62560f58-ca68-415d-b485-ace3e54f1a58.png)
+![4](https://user-images.githubusercontent.com/81342077/207596126-b80b1ff3-ee36-40d6-a399-6a302b6e386d.png)
+![5](https://user-images.githubusercontent.com/81342077/207596143-6a1b70dc-c2c2-4ee3-a448-f113adcde5c1.png)
+![6](https://user-images.githubusercontent.com/81342077/207596171-8d92d528-a5cf-44a3-9d84-d13952e4db47.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
